@@ -1,106 +1,183 @@
 1.
 ¿Qué son los controladores?
 Clases que contienen la lógica de la respuesta a solicitudes HTTP
+
 2.
 ¿Para qué sirve un layout?
-Para contener el HTML, CSS y JavaScript común a todo el sitio
+- Para contener el HTML, CSS y JavaScript común a todo el sitio
+
 3.
 ¿Por qué necesito un framework?
-Principalmente para no reinventar la rueda y enfocarnos en la necesidad real.
+- Principalmente para no reinventar la rueda y enfocarnos en la necesidad real.
+
 4.
 ¿Qué es un helper?
-Es un ayudante con tareas específicas y repetitivas.
+- Es un ayudante con tareas específicas y repetitivas.
+
 5.
 ¿Cuál es la función principal de la carpeta views?
-Organizar nuestras vistas.
+- Organizar nuestras vistas.
+
 6.
 ¿Qué comando usarias para borrar las tablas, volverla a crear y rellenarlas de datos?
-php artisan migrate:fresh --seed
+- php artisan migrate:fresh --seed
+
 7.
 ¿Qué es Tailwind CSS?
-Un Framework CSS para crear rápidamente diseños propios.
+- Un Framework CSS para crear rápidamente diseños propios.
+
 8.
 ¿Cuando usamos el método foreign?
-Cuando queremos crear una relación de tablas
+- Cuando queremos crear una relación de tablas
+
+
 9.
 ¿Qué es un API?
-Código preparado en el servidor para que otros sistemas se puedan conectar.
+- Código preparado en el servidor para que otros sistemas se puedan conectar.
+
 10.
 ¿Qué método usamos para verificar que contamos con un registro en una tabla?
-$this->assertDatabaseHas()
+- $this->assertDatabaseHas()
+
 11.
 ¿Cómo funciona el Server Side Rendering?
-Mi servidor procesa toda la página por cada solicitud y manda las plantillas HTML al navegador ya procesadas.
+- Mi servidor procesa toda la página por cada solicitud y manda las plantillas HTML al navegador ya procesadas.
+
 12.
 ¿Cuál de las siguientes es una buena práctica para evitar código espagueti?
-Usa las etiquetas de PHP diseñadas para imprimir en HTML.
+- Usa las etiquetas de PHP diseñadas para imprimir en HTML.
+
 13.
 ¿Podemos usar la función `mail()` de PHP?
-Verdadero, pero requiere de una configuración muy avanzada en nuestra computadora para poder usarla, por eso es mejor usar alternativas como PHP Mailer.
+- Verdadero, pero requiere de una configuración muy avanzada en nuestra computadora para poder usarla, por eso es mejor usar alternativas como PHP Mailer.
+
 14.
 ¿Qué tipo de rendering utiliza PHP?
-Server Side Rendering (SSR)
+- Server Side Rendering (SSR)
+
 15.
 ¿Es posible ver los datos enviados por medio de una solicitud POST?
-Verdadero. Usando la consola de desarrolladores podemos inspeccionar cada solicitud que es enviada al servidor y ver qué datos se están mandando.
+- Verdadero. Usando la consola de desarrolladores podemos inspeccionar cada solicitud que es enviada al servidor y ver qué datos se están mandando.
+
 16.
 ¿Cuál es la extensión de mis vistas?
-.blade.php
+- .blade.php
+
 17.
 ¿Qué son los traits?
-Son una alternativa a la herencia en PHP. Permite definir métodos que pueden ser compartidos o reutilizados por varias clases.
+- Son una alternativa a la herencia en PHP. Permite definir métodos que pueden ser compartidos o reutilizados por varias clases.
 
 18.
 Si quiero ligar datos que un usuario escribe a una consulta SQL con el driver de PDO, ¿cuál método sería el más seguro para hacerlo?
-bind_param. 
+- bind_param. 
 **REPASAR**
 
 19.
 ¿Cuál de las siguientes afirmaciones lograría explicar que es un Framework?
-Un Framework de backend te da buenas prácticas y arquitectura base para construir un producto.
+- Un Framework de backend te da buenas prácticas y arquitectura base para construir un producto.
 
 20.
 ¿Las cookies se pueden usar para almacenar información tanto en los navegadores como en apps móviles?
-FALSE
+- FALSE
 
 21.
 ¿Cómo instamos a bootstrap en nuestro proyecto?
-npm install bootstrap --save-dev
+- npm install bootstrap --save-dev
+
 22.
 ¿Con qué atributo HTML seleccionamos una opción en select?
 
-selected
+- selected
+
+
 23.
 ¿Por qué usamos datos falsos en pruebas?
-Los datos falsos permiten: aislar las pruebas de la API de la base de datos de producción y de datos reales; proteger la confidencialidad de datos sensibles; simular diferentes escenarios o para probar casos límite y excepcionales que pueden ser difíciles de lograr con datos reales.
+- Los datos falsos permiten: aislar las pruebas de la API de la base de datos de producción y de datos reales; proteger la confidencialidad de datos sensibles; simular diferentes escenarios o para probar casos límite y excepcionales que pueden ser difíciles de lograr con datos reales.
 
 24.
 Si defines $nombres = ['Ana','Luis','María','Pedro'], ¿cómo mostrarías en PHP solo el tercer y el último elemento?
-Usar echo $nombres[3] para el tercer elemento y echo $nombres[count($nombres)-1] para el último.
+- Usar echo $nombres[3] para el tercer elemento y echo $nombres[count($nombres)-1] para el último.
 **REPASAR**
 
 
 25.
 Según la clase, ¿qué sitios populares demostraron que PHP domina la web?
-Facebook, Twitter y LinkedIn fueron mostrados como sitios principales que usan PHP
+- Facebook, Twitter y LinkedIn fueron mostrados como sitios principales que usan PHP
 **REPASAR**
 
 26.
 ¿Cuál es la cadena DSN correcta para conectar con host 127.0.0.1, base de datos web_php y charset utf8 usando PDO?
-mysql:host=127.0.0.1;dbname=web_php;charset=utf8
+- mysql:host=127.0.0.1;dbname=web_php;charset=utf8
+
 27.
 Si al listar preguntas en el home notas lentitud, ¿cómo optimizarías las consultas en Laravel y LiveWire?
-Usar eager loading con with(‘author’,‘category’,‘likes’) en render de LiveWire y reducir queries innecesarias.
+- Usar eager loading con with(‘author’,‘category’,‘likes’) en render de LiveWire y reducir queries innecesarias.
 
 28.
 Si usas @can('update',$question) en Blade y tu Policy exige ownership y sin contenido, ¿qué botones ves en preguntas con comentarios?
-Se ocultan ambos botones para preguntas ajenas y para propias con comentarios, sin opción de eliminar.
+- Se ocultan ambos botones para preguntas ajenas y para propias con comentarios, sin opción de eliminar.
 **REPASAR**
 
 29.
 ¿Cómo adaptarías el método toggle para que use el ID del usuario autenticado en lugar del usuario hardcodeado ID 20?
-Reemplazar el ID 20 por auth()->id() en las llamadas a darCorazon y quitarCorazon.
+- Reemplazar el ID 20 por auth()->id() en las llamadas a darCorazon y quitarCorazon.
 
 30.
 Si al crear un proyecto con laravel new seleccionas LiveWire y respondes no a Volt, ¿qué configuración se aplica?
-Se configura autenticación de Laravel con LiveWire, sin incluir Volt en el scaffold y omitiendo PHP U
+- Se configura autenticación de Laravel con LiveWire, sin incluir Volt en el scaffold y omitiendo PHP U
+
+
+31. ¿Por qué es importante usar namespace framework en la nueva clase de autenticación?
+- Mejora el rendimiento en tiempo de ejecución del autoloader de PHP gracias al namespace framework.
+**REPASAR** 
+
+
+32. ¿Para qué sirve la variable de entorno APP_ENV?
+- Para indicar al cliente a dónde se está conectando
+**REPASAR** 
+
+33. ¿Cómo conviene nombrar los recursos?
+- Sustantivos, siempre en plural
+
+34. ¿Podemos crear una clase para personalizar nuestros recursos?
+- SI 
+
+35. ¿Cuál es el efecto de enviar un form vacío tras quitar el atributo required del textarea?
+- El form llega al método store y la validación PHP en ResponseRequest impide el guardado mostrando errores.
+
+36. Si modificas clases Tailwind en app.css pero omites npm run dev, ¿qué ocurrirá al recargar la página?
+- Los cambios no se reflejarán porque Byte no habrá procesado ni compilado el CSS actualizado.
+
+37. ¿Para qué sirve la annotation @IsGranted?
+- Para limitar el acceso a un método a los usuarios que tengan un determinado rol asociado
+
+38. Una buena práctica para comprobar contraseñas al momento de autenticar es:
+- utilizar la interfaz Illuminate\Support\Facades\Hash para almacenar y verificar contraseñas.
+
+39. ¿Cuál es el aspecto típico de los endpoints?
+- http://laravel-api.test/api/v1/posts/1
+
+
+40. ¿Cómo protegemos a nuestrar rutas?
+- Usando el middleware sanctum.
+**REPASAR**
+
+41. Si traslada la lógica de validación al método store, ¿qué mejora obtendría en la estructura profesional de su controlador?
+- La separación de responsabilidades y un flujo claro: index para vista, store para validar y persistir datos.
+
+42. Si al ejecutar el sistema ves que var_dump muestra solo rutas GET vacías, ¿qué revisarías primero para corregir esa falla?
+- Confirmar que get() y post() llenen la propiedad routes antes de ejecutar run() del Router.
+
+43. ¿Puedo crear métodos personalizados en las entidades?
+- SI
+
+44. ¿Qué encabezado es importante para obtener un comportamiento API real?
+- Accept: application/json.
+
+45. ¿Cuál es el efecto de php artisan migrate:refresh --seed en la base de datos?
+- Ejecuta rollback de migraciones, luego migraciones y seeders.
+46. Si la autenticación es vía Access Tokens ¿Cuántos actores intervienen en la comunicación?
+- 2 
+**REPASAR**
+
+
