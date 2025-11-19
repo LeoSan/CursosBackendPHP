@@ -67,7 +67,6 @@ Closures
 
 17.
 ¿Cómo expresarías que la siguiente función va a devolver sí o sí un entero?
-function suma($n1, $n2) { return $n1 + $n2; }
 function suma($n1, $n2) : int { return $n1 + $n2; }
 
 18.
