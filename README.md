@@ -52,14 +52,15 @@ Based on the philosophy of *unlearning to relearn*, I revisited the foundations 
 | **Platzi Career Certificate** | Full Backend Development Career | [📜 Diploma](https://github.com/LeoSan/DesarrolloWebBackendPHP_PLATZI_2021/blob/main/2021_Diploma-Carrera-backend_php_PLATZI.pdf) |
 | **Ruta 2024 Knowledge Update** | Latest PHP Standards & Practices | [📜 Diploma](https://github.com/LeoSan/CursosBackendPHP/blob/main/03_Avanzado/12_Curso_Renovado_PHP_2024/2024_diploma-web-php_platzi.pdf) |
 | **Ruta 2025 Knowledge Update** | Latest PHP Standards & Practices | [📜 Diploma](https://github.com/LeoSan/CursosBackendPHP/blob/main/03_Avanzado/14_Curso_Ruta_Renovada_2025/2025_diploma-programacion-con-php_PLATZI.pdf) |
+| **Develop Backend con PHP 2025 Knowledge Update** | Latest PHP Standards & Practices | [📜 Diploma](https://github.com/LeoSan/CursosBackendPHP/blob/main/03_Avanzado/15_DesarrolloBackendPHP_2025/2025_Diploma-desarrollo-backend-con-php_PLATZI.pdf) |
 
 
 <div align="center">
   <img src="portadaCertificate.png" alt="Global Certificate" width="33%" />
   <img src="BACKEND_CON_PHP_2024.png" alt="2024 Update" width="33%" />
   <img src="03_Avanzado/14_Curso_Ruta_Renovada_2025/image.png" alt="2024 Update" width="33%" />
+  <img src="03_Avanzado/15_DesarrolloBackendPHP_2025/image.png" alt="2024 Update" width="33%" />
 </div>
 
 > *Note: Some images represent the culmination of the learning paths.*
-
 

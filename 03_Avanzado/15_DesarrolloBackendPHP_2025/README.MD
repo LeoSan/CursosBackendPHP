@@ -179,7 +179,8 @@ Si al crear un proyecto con laravel new seleccionas LiveWire y respondes no a Vo
 
 
 46. Si la autenticación es vía Access Tokens ¿Cuántos actores intervienen en la comunicación?
-- 2 
+- 4 
+- 2
 **REPASAR**
 
 - Dado que estás en Linux sin Laravel Herd, ¿qué debes instalar manualmente antes de crear un proyecto Laravel?
@@ -257,3 +258,56 @@ Si al crear un proyecto con laravel new seleccionas LiveWire y respondes no a Vo
 68. ¿Qué significa slug en Laravel y para qué se utiliza?
 - Versión URL-friendly de un título en el modelo que facilita la generación automática de URLs limpias.
 
+69. La planeación del alcance de tu APIs se refiere, entre otras cosas, a:
+- Determinar los objetivos y las funcionalidades específicas que la API debe ofrecer.
+
+70. ¿Cómo podrías refactorizar el ejecutable con sleep(2) y lógica de respuestas para aplicar separación de responsabilidades?
+- Extraer la lógica de respuesta y sleep(2) a una clase fake con método obtenerRespuesta, e invocarla via autoload.
+
+71. ¿Qué clase debemos importar en nuestras entidades para evitar que la información se duplique?
+- Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity
+
+72. ¿Cuántas rutas puede manejar normalmente un API?
+- 5 rutas.
+
+73. ¿Cómo se debe configurar el color dinámico en la vista?
+- Se configura mediante el atributo style.
+
+74. Después de haber creado al panel administrativo con sus módulos ¿Podemos agregar otro tiempo después?
+- Si es posible, esto se hace en el controlador llamado AbstractCrudController
+**REPASAR**
+
+75. Esta carpeta contendrá nuestras clases, controladores y programación principal:
+- APP 
+76. ¿Cómo protegemos nuestras rutas?
+- Con el middleware auth
+
+77. ¿Qué significa el estado VERDE?
+- Significa que hemos escrito el código que satisface la prueba
+
+78. Sí una entidad se llama Post ¿Cómo se podría llamar su controlador para el CRUD?
+- PostController
+**REPASAR**
+
+79. ¿Cómo se llama el archivo que me permite cambiar la configuración regional?
+- translation.yaml
+
+80. ¿Qué me permite hacer el archivo .htaccess?
+- Me permite reescribir ciertas reglas de Apache para poder hacer modificaciones como la reescritura de URL, teniendo así URL más amigables.
+
+81. ¿Qué helper usamos en nuestros campos para recuperar los valores luego de una validación?
+- old()
+
+82. ¿Cuál sería el impacto si eliminas el break tras encontrar un error para un campo en Validator?
+- Se registrarían todos los errores de ese campo y mostraría múltiples mensajes en vez de solo el primero.
+
+
+83. ¿Qué clase debemos importar para crear y configurar un botón de envío?
+- Symfony\Component\Form\Extension\Core\Type\SubmitType
+
+84. ¿Con qué comando creamos la estructura para nuestros usuarios?
+- php bin/console make:user
+85. ¿Cómo debe mejorar el helper de errores para aceptar tanto string como array y evitar fallos al iterar con foreach?
+- Validar con if(!is_array($errors)) $errors = [$errors]; luego foreach($errors as $e) funciona sin errores.
+
+86. 
