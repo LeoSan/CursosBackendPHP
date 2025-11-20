@@ -176,8 +176,84 @@ Si al crear un proyecto con laravel new seleccionas LiveWire y respondes no a Vo
 
 45. ¿Cuál es el efecto de php artisan migrate:refresh --seed en la base de datos?
 - Ejecuta rollback de migraciones, luego migraciones y seeders.
+
+
 46. Si la autenticación es vía Access Tokens ¿Cuántos actores intervienen en la comunicación?
 - 2 
 **REPASAR**
 
+- Dado que estás en Linux sin Laravel Herd, ¿qué debes instalar manualmente antes de crear un proyecto Laravel?
+
+47. ¿Qué estado HTTP usamos para probar una validación?
+- 200
+**REPASAR**
+
+
+48. ¿Cuál es el método de autorización que usamos en nuestros controladores?
+- validate()
+**REPASAR**
+
+49. ¿Cómo puedo crear cinco usuario mediante un Factory?
+- User::factory(5)->create()
+
+50. ¿Qué estatus HTTP enviamos para indicar que no se puede autorizar el acceso?
+- 401
+
+51. ¿Qué condición utilizamos para listar solo las respuestas padres?
+- whereParent()
+**REPASAR**
+
+52. ¿Cómo se comunican el lado del Frontend y el Backend?
+- Por medio de APIs sobre HTTP.
+
+53. ¿Con qué comando creamos un componente Livewire?
+- php artisan make:livewire name
+
+54. ¿Qué es un controlador?
+- Es el código que responde ante una petición con la respuesta deseada.
+**REPASAR**
+
+55. ¿Cómo puedo mostrar una vista desde la capa rutas en una línea?
+- Route::view('/', 'index')
+
+56. ¿Qué debe enviarse al servidor al realizar un HTTP PUT?
+- Todos los datos que conforman el recurso
+
+57. Archivo de configuración del proyecto:
+- config.php
+**REPASAR**
+
+58. ¿Qué es un ORM?
+- Una librería que permite interactuar con una base de datos relacional utilizando una interfase de objetos
+
+59. Una política de acceso permite:
+- Controlar la autorización de usuarios, personalizar los niveles de acceso, mantener la integridad de los datos.
+
+60. Cuando hacemos una consulta desde cero y necesitamos cargar alguna relación usamos a métodos como "with()" en Laravel porque
+- Esto minimiza la cantidad de consultas SQL ejecutadas: Laravel ejecuta una consulta adicional (mediante una "join") para obtener los datos relacionados en una sola consulta en lugar de realizar una consulta separada por cada elemento relacionado.
+
+
+61. Dado que deseas ejecutar ./bin/archivo.php, ¿qué dos pasos aseguran la ejecución directa en Linux?
+- Agregar shebang #!/usr/bin/env php al inicio del archivo y usar chmod +x bin/archivo.php en Linux con permisos adecuados
+
+62. ¿Con qué número comienza la serie de redirección?
+- 3xx
+
+63. ¿Qué es HTTP?
+- Un protocolo de intercambio de hipertexto
+
+64. ¿Cómo podemos iniciar un proyecto?
+- php artisan serve
+
+65. ¿Cuál de las siguientes afirmaciones lograría describir el concepto de replicación en las bases de datos?
+- Es el proceso de almacenar información en varios nodos que entre sí están sincronizados.
+
+66. ¿Qué es Response?
+- Significa respuesta, es una clase usada para programar la respuesta correcta.
+
+67. Si la autenticación es HMAC ¿Qué debe enviar el cliente en cada petición?
+- Un hash que lo identifica
+
+68. ¿Qué significa slug en Laravel y para qué se utiliza?
+- Versión URL-friendly de un título en el modelo que facilita la generación automática de URLs limpias.
 
